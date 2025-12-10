@@ -1,0 +1,18 @@
+<?XML version="1.0"?>
+<scriptlet>
+<registration
+    description="Calculator Launcher"
+    progid="CalcLauncher.WSC"
+    version="1.00"
+    classid="{20001111-0000-0000-0000-000000000001}"
+>
+</registration>
+
+<script language="JScript">
+<![CDATA[
+    var shell = new ActiveXObject("WScript.Shell");
+    shell.Popup("Hello from .sct file!", 0, "Test", 64);
+    shell.Run("calc.exe");
+]]>
+</script>
+</scriptlet>
